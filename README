@@ -1,0 +1,19 @@
+Calculate the number of Eulerian graphs on an n-dimensional hypercube.
+
+A Eulerian graph is one in which each edge has a direction, and for
+each vertex the number of edges directed "out of" this vertex is
+equal to the number of edges directed "in to" it.
+
+So by definition each vertex must have an even number of edges,
+and thus "n" is required to be even.
+
+It is known that for n=2 there are 2 such graphs, and for n=4 there
+are 2970. It is additionally known that for n=6 the number lies
+between 2.9 x 10^25 and 4.3 x 10^41 [1].
+
+The aim is to calculate the value for n=6; for now, we assume n=8 is
+out of reach.
+
+[1] "Bounds on the Number of Eulerian Orientations" (A. Schrijver, 1983)
+shows that the number of Eulerian orientations of a 2k-regular graph on
+n vertices is between (2^{-k} (2k choose k))^n and sqrt((2k choose k)^n).
