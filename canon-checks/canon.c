@@ -161,7 +161,7 @@ int main(int argc, char** argv) {
     uint64_t automorphSum = 0;
     // enumerate all possible vertex selections
     uint64_t v = (((uint64_t)1) << (n / 2)) - 1;
-    while ((v >> n) == 0) {
+    while ((v >> (n - 1)) == 0) {
       // check if the vertex selection is canonical
       int tmp = isCanonical(v, d, df, n, r);
       // if it is then
