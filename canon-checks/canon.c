@@ -181,7 +181,7 @@ int main(int argc, char** argv) {
     for (int i = 0; i < df; i++) { free(r[i]); }
     free(r);
     // error out if automorphSum != total
-    if (automorphSum != total) {
+    if (automorphSum != 2 * total) {
       fprintf(stderr, "Error: automorphSum != total");
       exit(1);
     }
