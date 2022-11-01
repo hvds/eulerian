@@ -150,7 +150,7 @@ int main(int argc, char** argv) {
       fprintf(stderr, "Error: d must be in [1, 5]");
       exit(1);
     }
-    // get number of edges in hypercube
+    // get number of vertices in hypercube
     int n = 1 << d;
     // get d!
     int df = 1; for (int i = 2; i <= d; i++) { df *= i; }
