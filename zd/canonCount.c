@@ -1,7 +1,7 @@
 
-// canon.c
-// compile with gcc canon.c -o canon
 // short script to count number of canonical vertex selections with respect to reflection symmetry for a hypercube
+// Compile: gcc canonCount.c -O3 -std=c11 -o canonCount
+// Run: ./canonCount d > c{$d}.txt
 
 #include <stdio.h>
 #include <stdlib.h>
